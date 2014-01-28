@@ -1,0 +1,44 @@
+Warning[205] C:\MICROCHIP PIC12F\EPMV_V2_12\EPM_V2_1_2.ASM 1 : Found directive in column 1. (include)
+Message[302] C:\MICROCHIP PIC12F\EPMV_V2_12\EPM_V2_1_2.ASM 64 : Register in operand not in bank 0.  Ensure that bank bits are correct.
+Message[302] C:\MICROCHIP PIC12F\EPMV_V2_12\EPM_V2_1_2.ASM 69 : Register in operand not in bank 0.  Ensure that bank bits are correct.
+Message[302] C:\MICROCHIP PIC12F\EPMV_V2_12\EPM_V2_1_2.ASM 82 : Register in operand not in bank 0.  Ensure that bank bits are correct.
+Message[302] C:\MICROCHIP PIC12F\EPMV_V2_12\EPM_V2_1_2.ASM 83 : Register in operand not in bank 0.  Ensure that bank bits are correct.
+Message[302] C:\MICROCHIP PIC12F\EPMV_V2_12\EPM_V2_1_2.ASM 84 : Register in operand not in bank 0.  Ensure that bank bits are correct.
+Message[302] C:\MICROCHIP PIC12F\EPMV_V2_12\EPM_V2_1_2.ASM 85 : Register in operand not in bank 0.  Ensure that bank bits are correct.
+Message[302] C:\MICROCHIP PIC12F\EPMV_V2_12\EPM_V2_1_2.ASM 86 : Register in operand not in bank 0.  Ensure that bank bits are correct.
+Message[302] C:\MICROCHIP PIC12F\EPMV_V2_12\EPM_V2_1_2.ASM 87 : Register in operand not in bank 0.  Ensure that bank bits are correct.
+Message[302] C:\MICROCHIP PIC12F\EPMV_V2_12\EPM_V2_1_2.ASM 88 : Register in operand not in bank 0.  Ensure that bank bits are correct.
+Message[302] C:\MICROCHIP PIC12F\EPMV_V2_12\EPM_V2_1_2.ASM 89 : Register in operand not in bank 0.  Ensure that bank bits are correct.
+Message[302] C:\MICROCHIP PIC12F\EPMV_V2_12\EPM_V2_1_2.ASM 92 : Register in operand not in bank 0.  Ensure that bank bits are correct.
+Message[302] C:\MICROCHIP PIC12F\EPMV_V2_12\EPM_V2_1_2.ASM 96 : Register in operand not in bank 0.  Ensure that bank bits are correct.
+Message[302] C:\MICROCHIP PIC12F\EPMV_V2_12\EPM_V2_1_2.ASM 97 : Register in operand not in bank 0.  Ensure that bank bits are correct.
+Message[302] C:\MICROCHIP PIC12F\EPMV_V2_12\EPM_V2_1_2.ASM 98 : Register in operand not in bank 0.  Ensure that bank bits are correct.
+Message[302] C:\MICROCHIP PIC12F\EPMV_V2_12\EPM_V2_1_2.ASM 99 : Register in operand not in bank 0.  Ensure that bank bits are correct.
+Message[302] C:\MICROCHIP PIC12F\EPMV_V2_12\EPM_V2_1_2.ASM 100 : Register in operand not in bank 0.  Ensure that bank bits are correct.
+Message[302] C:\MICROCHIP PIC12F\EPMV_V2_12\EPM_V2_1_2.ASM 101 : Register in operand not in bank 0.  Ensure that bank bits are correct.
+Message[302] C:\MICROCHIP PIC12F\EPMV_V2_12\EPM_V2_1_2.ASM 114 : Register in operand not in bank 0.  Ensure that bank bits are correct.
+Message[302] C:\MICROCHIP PIC12F\EPMV_V2_12\EPM_V2_1_2.ASM 115 : Register in operand not in bank 0.  Ensure that bank bits are correct.
+Message[302] C:\MICROCHIP PIC12F\EPMV_V2_12\EPM_V2_1_2.ASM 116 : Register in operand not in bank 0.  Ensure that bank bits are correct.
+Message[302] C:\MICROCHIP PIC12F\EPMV_V2_12\EPM_V2_1_2.ASM 117 : Register in operand not in bank 0.  Ensure that bank bits are correct.
+Message[302] C:\MICROCHIP PIC12F\EPMV_V2_12\EPM_V2_1_2.ASM 118 : Register in operand not in bank 0.  Ensure that bank bits are correct.
+Message[302] C:\MICROCHIP PIC12F\EPMV_V2_12\EPM_V2_1_2.ASM 119 : Register in operand not in bank 0.  Ensure that bank bits are correct.
+Warning[203] C:\MICROCHIP PIC12F\EPMV_V2_12\EPM_V2_1_2.ASM 190 : Found opcode in column 1. (CLRWDT)
+Warning[203] C:\MICROCHIP PIC12F\EPMV_V2_12\EPM_V2_1_2.ASM 192 : Found opcode in column 1. (goto)
+Message[305] C:\MICROCHIP PIC12F\EPMV_V2_12\EPM_V2_1_2.ASM 319 : Using default destination of 1 (file).
+Message[305] C:\MICROCHIP PIC12F\EPMV_V2_12\EPM_V2_1_2.ASM 328 : Using default destination of 1 (file).
+Warning[207] C:\MICROCHIP PIC12F\EPMV_V2_12\EPM_V2_1_2.ASM 494 : Found label after column 1. (Return_From_Interrupt)
+Warning[205] C:\MICROCHIP PIC12F\EPMV_V2_12\EPM_V2_1_2.ASM 524 : Found directive in column 1. (Banksel)
+Warning[203] C:\MICROCHIP PIC12F\EPMV_V2_12\EPM_V2_1_2.ASM 525 : Found opcode in column 1. (BCF)
+Message[302] C:\MICROCHIP PIC12F\EPMV_V2_12\EPM_V2_1_2.ASM 525 : Register in operand not in bank 0.  Ensure that bank bits are correct.
+Warning[205] C:\MICROCHIP PIC12F\EPMV_V2_12\EPM_V2_1_2.ASM 527 : Found directive in column 1. (Banksel)
+Warning[203] C:\MICROCHIP PIC12F\EPMV_V2_12\EPM_V2_1_2.ASM 528 : Found opcode in column 1. (bsf)
+Warning[203] C:\MICROCHIP PIC12F\EPMV_V2_12\EPM_V2_1_2.ASM 529 : Found opcode in column 1. (movlw)
+Warning[203] C:\MICROCHIP PIC12F\EPMV_V2_12\EPM_V2_1_2.ASM 530 : Found opcode in column 1. (call)
+Warning[205] C:\MICROCHIP PIC12F\EPMV_V2_12\EPM_V2_1_2.ASM 532 : Found directive in column 1. (Banksel)
+Warning[203] C:\MICROCHIP PIC12F\EPMV_V2_12\EPM_V2_1_2.ASM 533 : Found opcode in column 1. (bcf)
+Warning[205] C:\MICROCHIP PIC12F\EPMV_V2_12\EPM_V2_1_2.ASM 534 : Found directive in column 1. (Banksel)
+Warning[203] C:\MICROCHIP PIC12F\EPMV_V2_12\EPM_V2_1_2.ASM 535 : Found opcode in column 1. (BSF)
+Message[302] C:\MICROCHIP PIC12F\EPMV_V2_12\EPM_V2_1_2.ASM 535 : Register in operand not in bank 0.  Ensure that bank bits are correct.
+Warning[203] C:\MICROCHIP PIC12F\EPMV_V2_12\EPM_V2_1_2.ASM 536 : Found opcode in column 1. (movlw)
+Warning[203] C:\MICROCHIP PIC12F\EPMV_V2_12\EPM_V2_1_2.ASM 537 : Found opcode in column 1. (call)
+Warning[203] C:\MICROCHIP PIC12F\EPMV_V2_12\EPM_V2_1_2.ASM 538 : Found opcode in column 1. (return)
