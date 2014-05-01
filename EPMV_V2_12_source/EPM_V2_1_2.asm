@@ -64,6 +64,7 @@ Setup:
 	movwf  	OSCCON			; Set the internal clock speed to 8 Mhz 
 	movlw  	0x07
 	Banksel CMCON0
+
     movwf  	CMCON0			; Turn off Comparator (GP0, GP1, GP2)
 	Banksel ANSEL
 	clrf   	ANSEL			; Make all ports as digital I/O
@@ -371,7 +372,7 @@ Turn_On
 	;disable capacitor charger, GPIO1
 	Banksel GPIO
 	bcf		GPIO,1
-	movlw	.020				; needs testing if it can be reduced to 20ms
+;	movlw	.050				; needs testing if it can be reduced to 20ms
 	call	DelayMs				; Call DelayMs Subroutine
 
 	;set Status to On 010
@@ -388,14 +389,76 @@ Turn_On
 	;set GPIO4 high for 1mS
 	Banksel GPIO
 	bsf		GPIO,5
-	movlw	.001				; 1 ms delay
+	movlw	.005				; 1 ms delay
 	call	DelayMs				; Call DelayMs Subroutine
 	Banksel GPIO
 	bcf		GPIO,5
 
 
 	;wait till switch cycle is complete
-	movlw	.100				; needs testing if it can be reduced to 20ms
+;	movlw	.050				; needs testing if it can be reduced to 20ms
+	call	DelayMs				; Call DelayMs Subroutine
+
+	
+	;turn capacitor charger back on
+	Banksel GPIO
+	bsf		GPIO,1
+
+	CLRWDT							;just in case
+									;blink the LED 6 times, waiting ~600ms enough to charge the capacitor (charging takes longer at <5V inpu)
+	call Blink_LED
+	movlw	.100					;Wait 100 ms delay, 
+	call	DelayMs	
+	call Blink_LED
+	movlw	.100					;Wait 100 ms delay, 
+	call	DelayMs	
+	call Blink_LED
+	movlw	.100					;Wait 100 ms delay,
+	CLRWDT							;clear the WDT just in case
+	call	DelayMs	
+	call Blink_LED
+	movlw	.100					;Wait 100 ms delay, 
+	call	DelayMs	
+	call Blink_LED
+	movlw	.100					;Wait 100 ms delay, 
+	call	DelayMs	
+	call Blink_LED
+	movlw	.200					;Wait 100 ms delay, 
+	call	DelayMs	
+	movlw	.200					;Wait 100 ms delay, 
+	CLRWDT							;clear the WDT just in case
+;2
+
+	movlw 	.002		
+	movwf	PWM_Counter
+	;disable capacitor charger, GPIO1
+	Banksel GPIO
+	bcf		GPIO,1
+;	movlw	.050				; needs testing if it can be reduced to 20ms
+	call	DelayMs				; Call DelayMs Subroutine
+
+	;set Status to On 010
+	Banksel Status1
+	BCF Status1,0
+	BSF Status1,1
+	BCF Status1,2
+
+	;Pull data high
+	Banksel GPIO
+	BSF 	GPIO,0
+
+
+	;set GPIO4 high for 1mS
+	Banksel GPIO
+	bsf		GPIO,5
+	movlw	.005				; 1 ms delay
+	call	DelayMs				; Call DelayMs Subroutine
+	Banksel GPIO
+	bcf		GPIO,5
+
+
+	;wait till switch cycle is complete
+;	movlw	.050				; needs testing if it can be reduced to 20ms
 	call	DelayMs				; Call DelayMs Subroutine
 
 	
@@ -421,11 +484,14 @@ Turn_On
 	movlw	.100					;Wait 100 ms delay, 
 	call	DelayMs	
 	call Blink_LED
-	
-	Banksel TMR0
-	Clrf	TMR0					;reset the time0
 
-	goto Return_From_Interrupt
+	call	DelayMs	
+	Banksel TMR0
+	Clrf	TMR0					;reset the time0\
+
+;3
+
+		goto Return_From_Interrupt
 		
 Turn_Off
 	movlw 	.002		
@@ -452,7 +518,7 @@ Turn_Off
 	;set GPIO4 high for 1ms
 	Banksel GPIO
 	bsf		GPIO,4
-	movlw	.001				; 1 ms delay
+	movlw	.005				; 1 ms delay
 	call	DelayMs				; Call DelayMs Subroutine
 	Banksel GPIO
 	bcf		GPIO,4
